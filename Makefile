@@ -6,7 +6,7 @@
 #    By: fdiaz-ca <fdiaz-ca@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 20:39:28 by fdiaz-ca          #+#    #+#              #
-#    Updated: 2022/12/01 14:44:05 by fdiaz-ca         ###   ########.fr        #
+#    Updated: 2023/01/28 13:31:05 by fdiaz-ca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ EOC = \033[1;0m
 
 all:	$(NAME)
 
-$(NAME):
+$(NAME):	$(SRCS)
 	@echo "$(YEL)==== Building MLX42 ====$(EOC)"
 	@make -C $(MLX_DIR) --silent
 	@echo "$(GRN)  _==__==_Done_==__==_       $(EOC)"
